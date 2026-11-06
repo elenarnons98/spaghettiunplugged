@@ -74,12 +74,15 @@ html {
     text-decoration: underline;
 }
 
-.mobile-brand,
-.mobile-menu-toggle {
-    display: none;
+/* Dimensione base dei testi del menu */
+.hero-navbar a,
+.mobile-menu-brand,
+.mobile-menu-links a {
+    font-size: 30px;
 }
 
-.mobile-menu-panel[hidden] {
+.mobile-brand,
+.mobile-menu-toggle {
     display: none;
 }
 
@@ -87,9 +90,22 @@ html {
     position: fixed;
     inset: 0;
     z-index: 1000;
-    background: #fff;
+    background: #ffffff;
     color: #000;
     font-family: 'NewEdge 666', sans-serif;
+    mix-blend-mode: normal;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(100%);
+    transition: transform 800ms cubic-bezier(0.16, 1, 0.3, 1), visibility 0s linear 800ms;
+    will-change: transform;
+}
+
+.mobile-menu-panel.is-open {
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+    transition-delay: 0s;
 }
 
 .mobile-menu-header {
@@ -112,29 +128,9 @@ html {
 }
 
 .mobile-menu-brand {
-    font-size: 18px;
+    font-size: 30px;
     line-height: 1.2;
     white-space: nowrap;
-}
-
-.mobile-menu-close {
-    display: grid;
-    width: 28px;
-    height: 28px;
-    padding: 0;
-    place-items: center;
-    border: 0;
-    background: transparent;
-    color: #000;
-    cursor: pointer;
-    font: inherit;
-}
-
-.mobile-menu-close span {
-    font-family: Arial, sans-serif;
-    font-size: 28px;
-    font-weight: 200;
-    line-height: 1;
 }
 
 .mobile-menu-links {
@@ -149,7 +145,7 @@ html {
 }
 
 .mobile-menu-links a {
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1.2;
     white-space: nowrap;
 }
@@ -164,6 +160,10 @@ body.mobile-menu-open {
 
 /* MOBILE */
 @media (max-width: 767.98px) {
+    html {
+        overflow-x: clip;
+    }
+
     .hero {
         aspect-ratio: 9 / 16;
     }
@@ -182,32 +182,76 @@ body.mobile-menu-open {
         display: none;
     }
 
-    .hero-navbar .mobile-brand,
-    .hero-navbar .mobile-menu-toggle {
+    .hero-navbar .mobile-brand {
         display: block;
     }
 
     .hero-navbar .mobile-brand {
-        font-size: 16px;
+        font-size: 30px;
         color: #fff;
     }
 
-    .hero-navbar .mobile-menu-toggle {
-        display: flex;
+    .mobile-menu-toggle {
+        position: fixed;
+        top: 10px;
+        right: 14px;
+        z-index: 1001;
+        display: block;
         width: 28px;
         height: 22px;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 4px 0;
+        padding: 0;
         border: 0;
         background: transparent;
         cursor: pointer;
+        mix-blend-mode: difference;
     }
 
     .mobile-menu-toggle span {
         display: block;
+        position: absolute;
+        left: 3px;
         width: 22px;
         height: 1px;
         background: #fff;
+        transform-origin: center;
+        transition: transform 800ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .mobile-menu-toggle span:first-child {
+        top: 5px;
+    }
+
+    .mobile-menu-toggle span:last-child {
+        bottom: 5px;
+    }
+
+    .mobile-menu-toggle[aria-expanded="true"] span:first-child {
+        transform: translateY(5.5px) rotate(45deg);
+    }
+
+    .mobile-menu-toggle[aria-expanded="true"] span:last-child {
+        transform: translateY(-5.5px) rotate(-45deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mobile-menu-panel,
+    .mobile-menu-toggle span {
+        transition: none;
+    }
+}
+
+/* MENU DESKTOP */
+@media (min-width: 768px) {
+    .hero-navbar {
+        padding-top: 10px;
+    }
+
+    .hero-navbar .desktop-nav-link {
+        font-size: 30px;
+    }
+
+    .hero-navbar .desktop-brand {
+        font-size: 40.5px;
     }
 }
