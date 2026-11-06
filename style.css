@@ -193,7 +193,7 @@ body.mobile-menu-open {
 
     .mobile-menu-toggle {
         position: fixed;
-        top: 10px;
+        top: 17px;
         right: 14px;
         z-index: 1001;
         display: block;
