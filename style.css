@@ -44,6 +44,61 @@ html {
     z-index: 0;
 }
 
+/* Fascia marquee sotto la Hero */
+.music-marquee {
+    --music-marquee-duration: 36s;
+    display: flex;
+    width: 100%;
+    height: 26px;
+    align-items: center;
+    overflow: hidden;
+    background-color: #b4ff00;
+    color: #000;
+}
+
+.music-marquee__track {
+    display: flex;
+    width: max-content;
+    flex: 0 0 auto;
+    animation: music-marquee-scroll var(--music-marquee-duration) linear infinite;
+    will-change: transform;
+}
+
+.music-marquee__group {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+}
+
+.music-marquee__phrase {
+    flex: 0 0 auto;
+    padding-right: 16px;
+    color: #000;
+    font-family: 'NewEdge 666', sans-serif;
+    font-size: 17.35px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+@keyframes music-marquee-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .music-marquee__track {
+        animation: none;
+        transform: none;
+    }
+}
+
 /* Navbar trasparente sopra il video */
 .hero-navbar {
     position: absolute;

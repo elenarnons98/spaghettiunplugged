@@ -16,9 +16,16 @@ Il logo originale non è ancora stato aggiunto. Le sezioni Eventi, Chi siamo e I
 
 - La Hero usa il video `img/tappo generico.mp4` in autoplay, muto e in loop. Su Mobile il video riempie la Hero con `object-fit: cover` e viene ritagliato ai lati.
 - La navbar desktop è sovrapposta al video e usa `mix-blend-mode: difference`.
+- La voce del menu che punta a `#info` è etichettata “Info utili”.
 - Su Mobile un unico pulsante apre e chiude il pannello bianco a schermo intero. Le due linee dell'icona si incrociano in una X mentre il pannello scorre da destra.
 - Il menu supporta Escape, navigazione da tastiera, gestione del focus, chiusura alla selezione di un link, blocco dello scroll e `prefers-reduced-motion`.
 - I testi del menu Mobile sono impostati a 30px.
+
+## Fascia marquee
+
+- Subito dopo la Hero compare la fascia verde fluo con la frase “SCEGLI TU LA MUSICA DI DOMANI”, ripetuta per creare una sequenza continua.
+- La fascia è alta 26px e usa il font NewEdge 666 Rounded, testo nero e animazione CSS orizzontale regolabile tramite `--music-marquee-duration` in `style.css`.
+- La frase viene esposta una sola volta agli screen reader; con `prefers-reduced-motion` l'animazione viene disattivata e il contenuto resta visibile.
 
 ## Tecnologie
 
