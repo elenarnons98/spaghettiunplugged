@@ -310,3 +310,198 @@ body.mobile-menu-open {
         font-size: 40.5px;
     }
 }
+
+/* PROSSIMI EVENTI */
+.events-section {
+    width: 100%;
+    padding: 56px 16px 10px;
+    overflow: hidden;
+    background: #fff;
+    color: #000;
+}
+
+.events-container {
+    padding: 0;
+}
+
+.events-layout {
+    --bs-gutter-x: 0;
+    align-items: start;
+}
+
+.events-heading h2 {
+    margin: 0;
+    color: #000;
+    font-family: 'NewEdge 666', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.events-content {
+    min-width: 0;
+}
+
+.events-track {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, min(513px, calc((100% - 12px) / 2))));
+    gap: 12px;
+}
+
+.event-card {
+    min-width: 0;
+    overflow: hidden;
+}
+
+.event-poster-block {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.event-poster {
+    width: 100%;
+    min-height: 0;
+    flex: 1 1 auto;
+    background: #d9d9d9;
+}
+
+.event-marquee {
+    --music-marquee-duration: 14s;
+    flex: 0 0 22px;
+    height: 22px;
+}
+
+.event-marquee--roma {
+    background-color: #0b2cff;
+    color: #fff;
+}
+
+.event-marquee--milano {
+    background-color: #b4ff00;
+    color: #000;
+}
+
+.event-marquee .music-marquee__phrase {
+    color: inherit;
+    font-size: 17.35px;
+    line-height: 22px;
+}
+
+.event-ticket-bar {
+    display: flex;
+    width: 100%;
+    height: 52px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 0 10px 0 14px;
+    background: #000;
+    color: #fff;
+    font-family: 'NewEdge 666', sans-serif;
+    font-size: 17.35px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.event-ticket-bar .bi-arrow-up-right {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1;
+    -webkit-text-stroke: 0.8px currentColor;
+}
+
+.events-all-link {
+    display: block;
+    width: max-content;
+    margin: 10px 0 0 auto;
+    color: #000;
+    font-family: 'NewEdge 666', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+@media (max-width: 767.98px) {
+    .events-section {
+        padding: 20px 32px 10px;
+        overflow: hidden;
+    }
+
+    .events-heading {
+        margin-bottom: 14px;
+    }
+
+    .events-heading h2 {
+        font-family: 'NewEdge 666', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+        line-height: 1;
+        letter-spacing: 0;
+    }
+
+    .events-content {
+        width: calc(100% + 32px);
+        max-width: none;
+        margin-right: -32px;
+        padding: 0 32px 0 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .events-content::-webkit-scrollbar {
+        display: none;
+    }
+
+    .events-track {
+        display: flex;
+        width: max-content;
+        gap: 12px;
+    }
+
+    .event-card {
+        flex: 0 0 265px;
+        width: 265px;
+        max-width: 265px;
+        scroll-snap-align: start;
+    }
+
+    .event-poster-block {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+
+    .event-marquee {
+        flex-basis: 18px;
+        height: 18px;
+    }
+
+    .event-marquee .music-marquee__phrase {
+        font-size: 17.35px;
+        line-height: 18px;
+    }
+
+    .event-ticket-bar {
+        height: 38px;
+        padding: 0 7px 0 9px;
+        font-size: 17.35px;
+    }
+
+    .event-ticket-bar .bi-arrow-up-right {
+        font-size: 16px;
+        -webkit-text-stroke: 0.6px currentColor;
+    }
+
+    .events-all-link {
+        margin-top: 10px;
+    }
+}
