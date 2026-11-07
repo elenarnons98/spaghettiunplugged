@@ -33,6 +33,11 @@ Il logo originale non è ancora stato aggiunto. Le sezioni Chi siamo e Info util
 - Le fasce evento riutilizzano l'animazione CSS della marquee principale. Le barre “Acquista biglietto” sono predisposte visivamente; i collegamenti saranno aggiunti quando saranno disponibili gli URL.
 - L'icona freccia usa Bootstrap Icons via CDN.
 
+## Iscrizione Open Mic
+
+- Dopo `#eventi` compare il banner blu “Iscriviti all'Open Mic”, con tipografia NewEdge 666 e icona Bootstrap Icons.
+- Il banner è ancora senza URL: la destinazione verrà aggiunta quando sarà definita. Altezza Desktop attuale: 103px.
+
 ## Tecnologie
 
 - HTML5
