@@ -4,13 +4,13 @@ Sito one-page in sviluppo, basato sul progetto Figma **SITO SPAGHETTi 2027**.
 
 ## Struttura del progetto
 
-- `index.html` — documento HTML5 e punto d'ingresso; contiene la Hero video, la navigazione, Prossimi eventi, il banner Open Mic e la sezione Chi siamo.
+- `index.html` — documento HTML5 e punto d'ingresso; contiene la Hero video, la navigazione, Prossimi eventi, il banner Open Mic e le sezioni Chi siamo e Info utili.
 - `style.css` — stili delle sezioni e dei menu responsive, font personalizzati e animazioni CSS.
 - `font/` — file NewEdge 666 Rounded Regular e Light in formato OTF e TTF.
 - `img/tappo generico.mp4` — video orizzontale utilizzato nella Hero.
 - `img/eventi/`, `img/artisti/`, `img/partner/` — cartelle predisposte per le immagini del sito.
 
-Il logo originale non è ancora stato aggiunto. La sezione Info utili e la fascia animata dei partner sono ancora da sviluppare.
+Il logo originale non è ancora stato aggiunto. Le fasce animate dei partner e degli artisti e la sezione FAQ sono ancora da sviluppare.
 
 ## Hero e navigazione
 
@@ -41,7 +41,14 @@ Il logo originale non è ancora stato aggiunto. La sezione Info utili e la fasci
 
 - La sezione `#chi-siamo` segue il banner Open Mic e contiene titolo e due paragrafi testuali.
 - La galleria usa tre placeholder grigio chiaro quadrati. Su Desktop sono disposti in una griglia e possono raggiungere 513 × 513px ciascuno; su Mobile scorrono orizzontalmente e misurano 324 × 324px.
-- Testi, proporzioni e spaziature della sezione sono ancora soggetti ad approvazione e verifica con Figma. La galleria partner non è ancora stata sviluppata.
+- Testi, proporzioni e spaziature della sezione sono ancora soggetti ad approvazione e verifica con Figma.
+
+## Info utili
+
+- La sezione `#info` segue «Chi siamo?» e presenta il titolo «Info utili» insieme al «Regolamento Open mic».
+- Usa sfondo blu `#0b2cff`, testo bianco e font NewEdge 666 Rounded.
+- Desktop: titolo 60px, intestazione 40px e paragrafo 30px. Mobile: titolo 50px, intestazione 30px e paragrafo 20px.
+- Il paragrafo del regolamento è giustificato su Desktop e Mobile. Le spaziature sono provvisorie e ancora da confrontare con Figma.
 
 ## Tecnologie
 

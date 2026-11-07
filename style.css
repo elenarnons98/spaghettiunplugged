@@ -741,3 +741,111 @@ body.mobile-menu-open {
         scroll-snap-align: start;
     }
 }
+
+/* INFO UTILI - misure provvisorie in attesa di verifica Figma */
+.info-section {
+    --info-section-padding-block: clamp(2rem, 5vw, 5rem);
+    --info-section-padding-inline: clamp(1rem, 5vw, 5rem);
+    --info-column-gap: clamp(1.5rem, 4vw, 4rem);
+    --info-title-size: clamp(2.5rem, 5vw, 3.75rem);
+    --info-heading-size: clamp(1.75rem, 3vw, 2.5rem);
+    --info-copy-size: clamp(1rem, 1.5vw, 1.375rem);
+    padding: var(--info-section-padding-block) 0;
+    background-color: #0b2cff;
+    color: #fff;
+    font-family: 'NewEdge 666', sans-serif;
+}
+
+.info-container {
+    padding-right: var(--info-section-padding-inline);
+    padding-left: var(--info-section-padding-inline);
+}
+
+.info-layout {
+    --bs-gutter-x: var(--info-column-gap);
+    row-gap: var(--info-column-gap);
+    align-items: start;
+}
+
+.info-heading h2,
+.info-content h3 {
+    margin: 0;
+    font-family: 'NewEdge 666', sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    text-align: left;
+}
+
+.info-heading h2 {
+    font-size: var(--info-title-size);
+}
+
+.info-content h3 {
+    margin-bottom: clamp(1rem, 2vw, 2rem);
+    font-size: var(--info-heading-size);
+}
+
+.info-content p {
+    margin: 0;
+    font-family: 'NewEdge 666', sans-serif;
+    font-size: var(--info-copy-size);
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: justify;
+}
+
+@media (max-width: 767.98px) {
+    /* INFO UTILI - MOBILE: valori Figma */
+    .info-section {
+        --info-section-padding-block: 2rem;
+        --info-section-padding-inline: 1rem;
+        --info-column-gap: 2rem;
+        --info-title-size: 50px;
+        --info-heading-size: 30px;
+        --info-copy-size: 20px;
+    }
+
+    .info-heading h2,
+    .info-content h3 {
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: 0;
+        text-align: left;
+    }
+
+    .info-content p {
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: 0;
+        text-align: justify;
+    }
+}
+
+/* INFO UTILI - DESKTOP: valori Figma */
+@media (min-width: 768px) {
+    .info-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .info-section {
+        --info-title-size: 60px;
+        --info-heading-size: 40px;
+        --info-copy-size: 30px;
+    }
+
+    .info-heading h2,
+    .info-content h3 {
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: 0;
+        text-align: left;
+    }
+
+    .info-content p {
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: 0;
+        text-align: justify;
+    }
+}
