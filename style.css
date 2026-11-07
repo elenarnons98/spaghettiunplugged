@@ -558,3 +558,186 @@ body.mobile-menu-open {
         padding-bottom: 0;
     }
 }
+
+/* CHI SIAMO - valori provvisori, da verificare con Figma */
+.about-section {
+    --about-section-padding: clamp(1.5rem, 5vw, 5rem);
+    --about-column-gap: clamp(1.5rem, 4vw, 4rem);
+    --about-gallery-gap: clamp(0.75rem, 1.5vw, 1.5rem);
+    --about-lead-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    --about-secondary-size: clamp(1rem, 1.4vw, 1.25rem);
+    padding: var(--about-section-padding) 0;
+    background-color: #fff;
+    color: #000;
+    font-family: 'NewEdge 666', sans-serif;
+}
+
+.about-container {
+    padding-right: var(--about-section-padding);
+    padding-left: var(--about-section-padding);
+}
+
+.about-layout {
+    row-gap: var(--about-column-gap);
+}
+
+#chi-siamo h2 {
+    margin: 0;
+    font-family: 'NewEdge 666', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: left;
+}
+
+/* CHI SIAMO - PRIMO PARAGRAFO */
+#chi-siamo p:first-of-type {
+    font-family: 'NewEdge 666', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: justify;
+}
+
+/* CHI SIAMO - SECONDO PARAGRAFO */
+#chi-siamo p:nth-of-type(2) {
+    font-family: 'NewEdge 666', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 110%;
+    letter-spacing: 0;
+    text-align: justify;
+}
+
+.about-copy {
+    display: grid;
+    gap: var(--about-column-gap);
+}
+
+.about-copy p {
+    margin: 0;
+}
+
+.about-copy-lead {
+    font-size: var(--about-lead-size);
+    line-height: 1.15;
+}
+
+.about-copy-secondary {
+    font-size: var(--about-secondary-size);
+    line-height: 1.35;
+}
+
+/* CHI SIAMO - GALLERIA */
+.about-gallery {
+    margin-top: var(--about-column-gap);
+    width: 100%;
+    overflow: visible;
+}
+
+.about-gallery-track {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
+    max-width: calc(1539px + 2 * var(--about-gallery-gap));
+    gap: var(--about-gallery-gap);
+}
+
+.about-gallery-placeholder {
+    width: 100%;
+    min-width: 0;
+    aspect-ratio: 1 / 1;
+    background-color: #e5e5e5;
+}
+
+@media (min-width: 768px) {
+    .about-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .about-layout {
+        --bs-gutter-x: var(--about-column-gap);
+        align-items: start;
+    }
+}
+
+/* CHI SIAMO - MOBILE */
+@media (max-width: 767.98px) {
+    .about-section {
+        padding: 32px 0 48px;
+    }
+
+    .about-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .about-layout {
+        row-gap: 40px;
+    }
+
+    #chi-siamo h2 {
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: 0;
+        text-align: left;
+    }
+
+    .about-copy {
+        gap: 24px;
+    }
+
+    #chi-siamo p.about-copy-lead {
+        font-family: 'NewEdge 666', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 26.9px;
+        line-height: 100%;
+        letter-spacing: 0;
+        text-align: justify;
+    }
+
+    #chi-siamo p.about-copy-secondary {
+        font-family: 'NewEdge 666', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16.81px;
+        line-height: 110%;
+        letter-spacing: 0;
+        text-align: justify;
+    }
+
+    .about-gallery {
+        width: calc(100% + 16px);
+        margin-top: 40px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x proximity;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .about-gallery::-webkit-scrollbar {
+        display: none;
+    }
+
+    .about-gallery-track {
+        display: flex;
+        width: max-content;
+        max-width: none;
+        gap: 12px;
+    }
+
+    .about-gallery-placeholder {
+        flex: 0 0 324px;
+        width: 324px;
+        height: 324px;
+        aspect-ratio: 1 / 1;
+        scroll-snap-align: start;
+    }
+}
