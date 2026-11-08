@@ -1462,3 +1462,10 @@ body.mobile-menu-open {
         text-align: right;
     }
 }
+
+/* HAMBURGER MOBILE - NON FISSO DURANTE LO SCROLL */
+@media (max-width: 767.98px) {
+    .mobile-menu-toggle {
+        position: absolute;
+    }
+}

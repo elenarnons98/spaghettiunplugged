@@ -16,7 +16,7 @@ Il logo originale non è ancora presente negli asset: il footer usa un wordmark 
 
 - La Hero usa il video `img/tappo generico.mp4` in autoplay, muto e in loop. Su Mobile il video riempie la Hero con `object-fit: cover` e viene ritagliato ai lati.
 - La navbar Desktop è sovrapposta al video e usa `mix-blend-mode: difference`.
-- Su Mobile un unico pulsante apre e chiude il pannello bianco a schermo intero. Le due linee dell'icona si incrociano in una X mentre il pannello scorre da destra.
+- Su Mobile un unico pulsante hamburger apre e chiude il pannello bianco a schermo intero. Il pulsante è posizionato in modo assoluto e scorre con la pagina; le due linee si incrociano in una X mentre il pannello scorre da destra.
 - Il menu supporta Escape, navigazione da tastiera, gestione del focus, chiusura alla selezione di un link, blocco dello scroll e `prefers-reduced-motion`.
 
 ## Fascia marquee
