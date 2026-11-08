@@ -4,13 +4,13 @@ Sito one-page in sviluppo, basato sul progetto Figma **SITO SPAGHETTi 2027**.
 
 ## Struttura del progetto
 
-- `index.html` — documento HTML5 e punto d'ingresso; contiene la Hero video, la navigazione, Prossimi eventi, il banner Open Mic e le sezioni Chi siamo, Info utili e FAQ.
+- `index.html` — documento HTML5 e punto d'ingresso; contiene Hero video, navigazione, Prossimi eventi, banner Open Mic, Chi siamo, Info utili, FAQ e footer.
 - `style.css` — stili delle sezioni e dei menu responsive, font personalizzati e animazioni CSS.
 - `font/` — file NewEdge 666 Rounded Regular e Light in formato OTF e TTF.
 - `img/tappo generico.mp4` — video orizzontale utilizzato nella Hero.
 - `img/eventi/`, `img/artisti/`, `img/partner/` — cartelle predisposte per le immagini del sito.
 
-Il logo originale non è ancora stato aggiunto. Le fasce animate dei partner e degli artisti e il footer sono ancora da sviluppare.
+Il logo originale non è ancora presente negli asset: il footer usa un wordmark testuale provvisorio, sostituibile con il file definitivo. Le fasce animate dei partner e degli artisti restano da inserire.
 
 ## Hero e navigazione
 
@@ -57,6 +57,14 @@ Il logo originale non è ancora stato aggiunto. Le fasce animate dei partner e d
 - La prima domanda è aperta inizialmente; la seconda e la terza sono chiuse. Le risposte usano temporaneamente lo stesso testo Lorem ipsum e compaiono solo quando la relativa domanda viene aperta.
 - I simboli `+` e `−` indicano lo stato delle domande. Il testo delle risposte è giustificato su Desktop e Mobile.
 - Da 1200px: titolo 60px, domande 50.08px e risposte 30px. Mobile: titolo 50px, domande 40px e risposte 20px.
+
+## Footer
+
+- Il footer segue la FAQ, usa sfondo nero, testi bianchi e font NewEdge 666 Rounded.
+- Su Desktop le quattro aree sono distribuite in orizzontale. Il wordmark testuale è impostato a 40.5px; slogan, contatti, voci Legal, social e copyright usano le misure Figma fornite.
+- Su Mobile il contenuto è disposto in due colonne: wordmark e slogan a sinistra, Contatti, Legal e Seguici a destra. Wordmark 30px, slogan 11.23px e testi delle colonne 11px; copyright 8px.
+- L'email apre `mailto:info@spaghettiunplugged.com`. Instagram, Facebook e le voci Legal restano testo in attesa dei rispettivi URL.
+- Il footer usa un wordmark provvisorio perché il logo originale non è presente negli asset locali.
 
 ## Tecnologie
 

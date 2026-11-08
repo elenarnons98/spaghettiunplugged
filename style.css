@@ -1046,3 +1046,419 @@ body.mobile-menu-open {
         text-align: justify;
     }
 }
+
+/* FOOTER - misure provvisorie in attesa di verifica Figma */
+.site-footer {
+    --footer-padding-block: clamp(2.5rem, 6vw, 6rem);
+    --footer-padding-inline: clamp(1rem, 4vw, 4rem);
+    --footer-column-gap: clamp(1.5rem, 3vw, 3rem);
+    --footer-text-size: clamp(0.95rem, 1.2vw, 1.125rem);
+    --footer-title-size: clamp(1rem, 1.4vw, 1.25rem);
+    --footer-wordmark-size: clamp(2rem, 3vw, 3rem);
+    width: 100%;
+    padding: var(--footer-padding-block) 0 clamp(1rem, 2vw, 2rem);
+    background: #000;
+    color: #fff;
+    font-family: 'NewEdge 666', sans-serif;
+    font-size: var(--footer-text-size);
+    font-weight: 400;
+}
+
+.site-footer__container {
+    padding-right: var(--footer-padding-inline);
+    padding-left: var(--footer-padding-inline);
+}
+
+.site-footer__columns {
+    --bs-gutter-x: var(--footer-column-gap);
+    row-gap: var(--footer-column-gap);
+}
+
+.site-footer__area h2 {
+    margin: 0 0 0.75em;
+    color: #fff;
+    font-family: 'NewEdge 666', sans-serif;
+    font-size: var(--footer-title-size);
+    font-weight: 400;
+    line-height: 1;
+}
+
+.site-footer__area p,
+.site-footer__area ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.25;
+}
+
+.site-footer__area li + li {
+    margin-top: 0.4em;
+}
+
+.site-footer__wordmark {
+    display: inline-block;
+    color: #fff;
+    font-family: 'NewEdge 666', sans-serif;
+    font-size: var(--footer-wordmark-size);
+    font-weight: 400;
+    line-height: 0.9;
+    text-decoration: none;
+}
+
+.site-footer__tagline {
+    margin-top: 0.9rem !important;
+}
+
+.site-footer a {
+    color: #fff;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.site-footer__bottom {
+    margin-top: clamp(2rem, 5vw, 5rem);
+}
+
+.site-footer__bottom p {
+    margin: 0;
+    color: #fff;
+    font-size: var(--footer-text-size);
+    line-height: 1.2;
+    text-align: right;
+}
+
+@media (max-width: 767.98px) {
+    .site-footer {
+        --footer-padding-block: 2rem;
+        --footer-padding-inline: 1rem;
+        --footer-column-gap: 1.75rem;
+        --footer-text-size: 1rem;
+        --footer-title-size: 1rem;
+        --footer-wordmark-size: 30px;
+    }
+
+    .site-footer__bottom {
+        margin-top: 2rem;
+    }
+
+    .site-footer__bottom p {
+        text-align: right;
+    }
+}
+
+/* FOOTER - LOGO DESKTOP: valori Figma */
+@media (min-width: 1200px) {
+    .site-footer__wordmark {
+        font-family: 'NewEdge 666', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40.5px;
+        line-height: 100%;
+        letter-spacing: 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+/* FOOTER - SLOGAN DESKTOP: valori Figma */
+@media (min-width: 1200px) {
+    .site-footer__tagline {
+        font-family: 'NewEdge 666', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 17.35px;
+        line-height: 140%;
+        letter-spacing: 0;
+        text-align: center;
+    }
+}
+
+/* FOOTER - ALLINEAMENTO SLOGAN DESKTOP */
+@media (min-width: 1200px) {
+    .site-footer__tagline {
+        margin-top: 2px !important;
+        text-align: left;
+    }
+}
+
+/* FOOTER - CONTATTI DESKTOP: valori Figma */
+@media (min-width: 1200px) {
+    /* Seconda colonna: CONTATTI */
+    .site-footer__columns > .site-footer__area:nth-child(2) {
+        text-align: right;
+    }
+
+    /* Titolo CONTATTI */
+    .site-footer__columns > .site-footer__area:nth-child(2) h2 {
+        font-family: 'NewEdge 666', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0;
+        text-align: right;
+        text-transform: uppercase;
+    }
+
+    /* Indirizzo email */
+    .site-footer__columns > .site-footer__area:nth-child(2) a {
+        font-family: 'NewEdge 666', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: 0;
+        text-align: right;
+    }
+}
+
+/* FOOTER - LEGAL DESKTOP: valori Figma */
+@media (min-width: 1200px) {
+    /* Terza colonna: LEGAL */
+    .site-footer__columns > .site-footer__area:nth-child(3) {
+        font-family: 'NewEdge 666', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: right;
+    }
+
+    /* Titolo LEGAL */
+    .site-footer__columns > .site-footer__area:nth-child(3) h2 {
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0;
+        text-align: right;
+        text-transform: uppercase;
+    }
+
+    /* Privacy Policy, Terms & Conditions, Cookie Policy */
+    .site-footer__columns > .site-footer__area:nth-child(3) li {
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: 0;
+        text-align: right;
+    }
+}
+
+/* FOOTER - SEGUICI DESKTOP: valori Figma */
+@media (min-width: 1200px) {
+    /* Quarta colonna: SEGUICI */
+    .site-footer__social {
+        text-align: right;
+    }
+
+    /* Titolo SEGUICI */
+    .site-footer__social h2 {
+        font-family: 'NewEdge 666', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0;
+        text-align: right;
+        text-transform: uppercase;
+    }
+
+    /* Instagram e Facebook */
+    .site-footer__social li {
+        font-family: 'NewEdge 666', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: 0;
+        text-align: right;
+    }
+}
+
+/* FOOTER - COPYRIGHT DESKTOP: valori Figma */
+@media (min-width: 1200px) {
+    .site-footer__bottom p {
+        font-family: 'NewEdge 666', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 10px;
+        line-height: 140%;
+        letter-spacing: 0;
+        text-align: right;
+    }
+}
+
+/* FOOTER - SLOGAN MOBILE: valori Figma */
+@media (max-width: 767.98px) {
+    .site-footer__tagline {
+        font-family: 'NewEdge 666', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 11.23px;
+        line-height: 140%;
+        letter-spacing: 0;
+        text-align: center;
+    }
+}
+
+/* FOOTER - DISPOSIZIONE MOBILE */
+@media (max-width: 767.98px) {
+    .site-footer__columns {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        column-gap: 12px;
+        row-gap: 24px;
+        margin: 0;
+        --bs-gutter-x: 0;
+    }
+
+    .site-footer__columns > .site-footer__area {
+        width: auto;
+        max-width: none;
+        min-width: 0;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    /* Logo e slogan a sinistra */
+    .site-footer__brand-area {
+        grid-column: 1;
+        grid-row: 1 / 4;
+        text-align: left;
+    }
+
+    .site-footer__brand-area .site-footer__tagline {
+        text-align: left;
+    }
+
+    /* CONTATTI in alto a destra */
+    .site-footer__columns > .site-footer__area:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: right;
+    }
+
+    /* LEGAL sotto CONTATTI */
+    .site-footer__columns > .site-footer__area:nth-child(3) {
+        grid-column: 2;
+        grid-row: 2;
+        text-align: right;
+    }
+
+    /* SEGUICI sotto LEGAL */
+    .site-footer__social {
+        grid-column: 2;
+        grid-row: 3;
+        text-align: right;
+    }
+
+    /* Allineamento dei testi di destra */
+    .site-footer__columns > .site-footer__area:not(.site-footer__brand-area) h2,
+    .site-footer__columns > .site-footer__area:not(.site-footer__brand-area) ul {
+        text-align: right;
+    }
+
+    /* Copyright in basso a destra */
+    .site-footer__bottom p {
+        text-align: right;
+    }
+}
+
+/* FOOTER - DISTANZA LOGO E SLOGAN MOBILE */
+@media (max-width: 767.98px) {
+    .site-footer__tagline {
+        margin-top: 2px !important;
+    }
+}
+
+/* FOOTER - CONTATTI MOBILE: valori Figma */
+@media (max-width: 767.98px) {
+    /* Titolo CONTATTI */
+    .site-footer__columns > .site-footer__area:nth-child(2) h2 {
+        font-family: 'NewEdge 666', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 11px;
+        line-height: 100%;
+        letter-spacing: 0;
+        text-align: right;
+        text-transform: uppercase;
+    }
+
+    /* Indirizzo email */
+    .site-footer__columns > .site-footer__area:nth-child(2) a {
+        font-family: 'NewEdge 666', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 11px;
+        line-height: 140%;
+        letter-spacing: 0;
+        text-align: right;
+    }
+}
+
+/* FOOTER - LEGAL MOBILE: valori Figma */
+@media (max-width: 767.98px) {
+    /* Terza colonna: LEGAL */
+    .site-footer__columns > .site-footer__area:nth-child(3) {
+        text-align: right;
+    }
+
+    /* Titolo LEGAL */
+    .site-footer__columns > .site-footer__area:nth-child(3) h2 {
+        font-family: 'NewEdge 666', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 11px;
+        line-height: 100%;
+        letter-spacing: 0;
+        text-align: right;
+        text-transform: uppercase;
+    }
+
+    /* Privacy Policy, Terms & Conditions, Cookie Policy */
+    .site-footer__columns > .site-footer__area:nth-child(3) li {
+        font-family: 'NewEdge 666', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 11px;
+        line-height: 140%;
+        letter-spacing: 0;
+        text-align: right;
+    }
+}
+
+/* FOOTER - SEGUICI MOBILE: valori Figma */
+@media (max-width: 767.98px) {
+    /* Titolo SEGUICI */
+    .site-footer__social h2 {
+        font-family: 'NewEdge 666', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 11px;
+        line-height: 100%;
+        letter-spacing: 0;
+        text-align: right;
+        text-transform: uppercase;
+    }
+
+    /* Instagram e Facebook */
+    .site-footer__social li {
+        font-family: 'NewEdge 666', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 11px;
+        line-height: 140%;
+        letter-spacing: 0;
+        text-align: right;
+    }
+}
+
+/* FOOTER - COPYRIGHT MOBILE: valori Figma */
+@media (max-width: 767.98px) {
+    .site-footer__bottom p {
+        font-family: 'NewEdge 666', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 8px;
+        line-height: 140%;
+        letter-spacing: 0;
+        text-align: right;
+    }
+}
