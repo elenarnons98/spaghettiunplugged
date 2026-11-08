@@ -4,13 +4,13 @@ Sito one-page in sviluppo, basato sul progetto Figma **SITO SPAGHETTi 2027**.
 
 ## Struttura del progetto
 
-- `index.html` — documento HTML5 e punto d'ingresso; contiene la Hero video, la navigazione, Prossimi eventi, il banner Open Mic e le sezioni Chi siamo e Info utili.
+- `index.html` — documento HTML5 e punto d'ingresso; contiene la Hero video, la navigazione, Prossimi eventi, il banner Open Mic e le sezioni Chi siamo, Info utili e FAQ.
 - `style.css` — stili delle sezioni e dei menu responsive, font personalizzati e animazioni CSS.
 - `font/` — file NewEdge 666 Rounded Regular e Light in formato OTF e TTF.
 - `img/tappo generico.mp4` — video orizzontale utilizzato nella Hero.
 - `img/eventi/`, `img/artisti/`, `img/partner/` — cartelle predisposte per le immagini del sito.
 
-Il logo originale non è ancora stato aggiunto. Le fasce animate dei partner e degli artisti e la sezione FAQ sono ancora da sviluppare.
+Il logo originale non è ancora stato aggiunto. Le fasce animate dei partner e degli artisti e il footer sono ancora da sviluppare.
 
 ## Hero e navigazione
 
@@ -50,6 +50,13 @@ Il logo originale non è ancora stato aggiunto. Le fasce animate dei partner e d
 - Usa sfondo blu `#0b2cff`, testo bianco e font NewEdge 666 Rounded.
 - Desktop: titolo 60px, intestazione 40px e paragrafo 30px. Mobile: titolo 50px, intestazione 30px e paragrafo 20px.
 - Il paragrafo del regolamento è giustificato su Desktop e Mobile. Le spaziature sono provvisorie e ancora da confrontare con Figma.
+
+## FAQ
+
+- La sezione `#faq` segue «Info utili» e usa un accordion Bootstrap 5.3.8 accessibile e utilizzabile da tastiera.
+- La prima domanda è aperta inizialmente; la seconda e la terza sono chiuse. Le risposte usano temporaneamente lo stesso testo Lorem ipsum e compaiono solo quando la relativa domanda viene aperta.
+- I simboli `+` e `−` indicano lo stato delle domande. Il testo delle risposte è giustificato su Desktop e Mobile.
+- Da 1200px: titolo 60px, domande 50.08px e risposte 30px. Mobile: titolo 50px, domande 40px e risposte 20px.
 
 ## Tecnologie
 
