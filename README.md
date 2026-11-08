@@ -28,7 +28,7 @@ Il logo originale non è ancora stato aggiunto. Le fasce animate dei partner e d
 ## Prossimi eventi
 
 - La sezione `#eventi` contiene placeholder per Roma e Milano; le locandine originali potranno essere inserite in `img/eventi/`.
-- Ogni locandina e fascia marquee formano un blocco quadrato responsive. Su Mobile le card scorrono orizzontalmente.
+- Ogni locandina e fascia marquee formano un blocco quadrato responsive. Su Mobile le card scorrono orizzontalmente; da 1200px la griglia Desktop dispone le card su due colonne.
 - Le barre “Acquista biglietto” sono predisposte visivamente; i collegamenti saranno aggiunti quando saranno disponibili gli URL.
 - Le icone freccia usano Bootstrap Icons via CDN.
 
@@ -41,6 +41,7 @@ Il logo originale non è ancora stato aggiunto. Le fasce animate dei partner e d
 
 - La sezione `#chi-siamo` segue il banner Open Mic e contiene titolo e due paragrafi testuali.
 - La galleria usa tre placeholder grigio chiaro quadrati. Su Desktop sono disposti in una griglia e possono raggiungere 513 × 513px ciascuno; su Mobile scorrono orizzontalmente e misurano 324 × 324px.
+- Da 1200px in su la griglia mostra tre colonne che occupano la larghezza disponibile.
 - Testi, proporzioni e spaziature della sezione sono ancora soggetti ad approvazione e verifica con Figma.
 
 ## Info utili
