@@ -1469,3 +1469,33 @@ body.mobile-menu-open {
         position: absolute;
     }
 }
+
+/* TITOLI PROSSIMI EVENTI E CHI SIAMO - DESKTOP */
+@media (min-width: 768px) {
+    .events-heading h2,
+    #chi-siamo h2 {
+        font-size: 40.5px;
+    }
+}
+
+/* TITOLI SEZIONI - DESKTOP E MOBILE */
+.events-heading h2,
+#chi-siamo h2,
+.info-heading h2 {
+    font-size: 50px;
+}
+
+/* CHI SIAMO - PRIMO PARAGRAFO */
+#chi-siamo p.about-copy-lead {
+    font-size: 30px;
+}
+
+/* FAQ - TITOLO DESKTOP E MOBILE */
+.faq-heading h2 {
+    font-size: 50px;
+}
+
+/* FAQ - TITOLI DELLE DOMANDE */
+.faq-section {
+    --faq-question-size: 40px;
+}

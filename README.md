@@ -40,6 +40,7 @@ Il logo originale non è ancora presente negli asset: il footer usa un wordmark 
 ## Chi siamo
 
 - La sezione `#chi-siamo` segue il banner Open Mic e contiene titolo e due paragrafi testuali.
+- Il titolo è 50px e il primo paragrafo 30px su Desktop e Mobile; il secondo paragrafo è 25px su Desktop e 16.81px su Mobile.
 - La galleria usa tre placeholder grigio chiaro quadrati. Su Desktop sono disposti in una griglia e possono raggiungere 513 × 513px ciascuno; su Mobile scorrono orizzontalmente e misurano 324 × 324px.
 - Da 1200px in su la griglia mostra tre colonne che occupano la larghezza disponibile.
 - Testi, proporzioni e spaziature della sezione sono ancora soggetti ad approvazione e verifica con Figma.
@@ -48,7 +49,7 @@ Il logo originale non è ancora presente negli asset: il footer usa un wordmark 
 
 - La sezione `#info` segue «Chi siamo?» e presenta il titolo «Info utili» insieme al «Regolamento Open mic».
 - Usa sfondo blu `#0b2cff`, testo bianco e font NewEdge 666 Rounded.
-- Desktop: titolo 60px, intestazione 40px e paragrafo 30px. Mobile: titolo 50px, intestazione 30px e paragrafo 20px.
+- Desktop: titolo 50px, intestazione 40px e paragrafo 30px. Mobile: titolo 50px, intestazione 30px e paragrafo 20px.
 - Il paragrafo del regolamento è giustificato su Desktop e Mobile. Le spaziature sono provvisorie e ancora da confrontare con Figma.
 
 ## FAQ
@@ -56,7 +57,8 @@ Il logo originale non è ancora presente negli asset: il footer usa un wordmark 
 - La sezione `#faq` segue «Info utili» e usa un accordion Bootstrap 5.3.8 accessibile e utilizzabile da tastiera.
 - La prima domanda è aperta inizialmente; la seconda e la terza sono chiuse. Le risposte usano temporaneamente lo stesso testo Lorem ipsum e compaiono solo quando la relativa domanda viene aperta.
 - I simboli `+` e `−` indicano lo stato delle domande. Il testo delle risposte è giustificato su Desktop e Mobile.
-- Da 1200px: titolo 60px, domande 50.08px e risposte 30px. Mobile: titolo 50px, domande 40px e risposte 20px.
+- Il titolo FAQ è 50px e le domande sono 40px su Desktop e Mobile. Le risposte sono 30px su Desktop da 1200px e 20px su Mobile.
+- I titoli principali di Prossimi eventi, Chi siamo, Info utili e FAQ sono impostati a 50px.
 
 ## Footer
 
