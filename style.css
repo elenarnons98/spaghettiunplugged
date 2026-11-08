@@ -1458,3 +1458,80 @@ body.mobile-menu-open {
 .faq-section {
     --faq-question-size: 40px;
 }
+
+/* PROSSIMI EVENTI - LOCANDINE DESKTOP */
+@media (min-width: 768px) {
+    .event-poster-block {
+        aspect-ratio: auto;
+    }
+
+    .event-poster {
+        min-height: 18.5rem;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+/* CHI SIAMO - FOTO DESKTOP */
+@media (min-width: 768px) {
+    .about-gallery-placeholder {
+        min-height: 19rem;
+        aspect-ratio: auto;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+/* CHI SIAMO - GALLERIA SCORREVOLE DESKTOP */
+@media (min-width: 768px) {
+    .about-gallery {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x proximity;
+        overscroll-behavior-x: contain;
+    }
+
+    .about-gallery-track {
+        display: flex;
+        width: max-content;
+        max-width: none;
+        gap: 12px;
+    }
+
+    .about-gallery-placeholder {
+        flex: 0 0 513px;
+        width: 513px;
+        min-height: 19rem;
+        aspect-ratio: auto;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        scroll-snap-align: start;
+    }
+}
+
+/* CHI SIAMO - GALLERIA SWIPE SENZA SCROLLBAR */
+.about-gallery {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.about-gallery::-webkit-scrollbar {
+    display: none;
+}
+
+/* Desktop: trascinamento con il mouse */
+@media (min-width: 768px) {
+    .about-gallery {
+        cursor: grab;
+    }
+
+    .about-gallery.is-dragging {
+        cursor: grabbing;
+        scroll-snap-type: none;
+        user-select: none;
+    }
+}

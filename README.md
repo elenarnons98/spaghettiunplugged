@@ -41,8 +41,8 @@ Il logo originale non è ancora presente negli asset: il footer usa un wordmark 
 
 - La sezione `#chi-siamo` segue il banner Open Mic e contiene titolo e due paragrafi testuali.
 - Il titolo è 50px e il primo paragrafo 30px su Desktop e Mobile; il secondo paragrafo è 25px su Desktop e 16.81px su Mobile.
-- La galleria usa tre placeholder grigio chiaro quadrati. Su Desktop sono disposti in una griglia e possono raggiungere 513 × 513px ciascuno; su Mobile scorrono orizzontalmente e misurano 324 × 324px.
-- Da 1200px in su la griglia mostra tre colonne che occupano la larghezza disponibile.
+- La galleria contiene dieci placeholder grigio chiaro. Su Desktop scorrono in orizzontale, sono larghi 513px e hanno un'altezza minima di 19rem; su Mobile scorrono con swipe e misurano 324 × 324px.
+- La scrollbar è nascosta; su Desktop è possibile trascinare la galleria con il mouse, mentre su Mobile rimane attivo lo scorrimento touch. Non è previsto scorrimento automatico.
 - Testi, proporzioni e spaziature della sezione sono ancora soggetti ad approvazione e verifica con Figma.
 
 ## Info utili
