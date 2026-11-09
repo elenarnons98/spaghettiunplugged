@@ -1598,6 +1598,11 @@ body.mobile-menu-open {
     }
 }
 
+/* CHI SIAMO - TESTI GIUSTIFICATI DESKTOP E MOBILE */
+#chi-siamo .about-copy p {
+    text-align: justify;
+}
+
 /* PROSSIMI EVENTI - NASCONDI VEDI TUTTI */
 .events-all-link {
     display: none;
