@@ -99,13 +99,13 @@ html {
     }
 }
 
-/* Navbar trasparente sopra il video */
+/* Navbar fissa e trasparente sopra la pagina */
 .hero-navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1404,10 +1404,10 @@ body.mobile-menu-open {
     }
 }
 
-/* HAMBURGER MOBILE - NON FISSO DURANTE LO SCROLL */
+/* HAMBURGER MOBILE - FISSO DURANTE LO SCROLL */
 @media (max-width: 767.98px) {
     .mobile-menu-toggle {
-        position: absolute;
+        position: fixed;
     }
 }
 
