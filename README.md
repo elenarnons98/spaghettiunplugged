@@ -26,7 +26,7 @@ Il logo originale non è ancora presente negli asset: il footer usa un wordmark 
 ## Fascia marquee
 
 - Subito dopo la Hero compare la fascia verde con la frase “SCEGLI TU LA MUSICA DI DOMANI”, ripetuta per creare una sequenza continua.
-- La fascia è alta 26px e usa il font NewEdge 666 Rounded, testo nero e animazione CSS orizzontale regolabile tramite `--music-marquee-duration` in `style.css`.
+- La fascia è alta 32px su Desktop e Mobile e usa il font NewEdge 666 Rounded, testo nero e animazione CSS orizzontale regolabile tramite `--music-marquee-duration` in `style.css`.
 - La frase viene esposta una sola volta agli screen reader; con `prefers-reduced-motion` l'animazione viene disattivata e il contenuto resta visibile.
 
 ## Prossimi eventi
