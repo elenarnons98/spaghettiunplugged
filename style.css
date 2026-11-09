@@ -215,10 +215,6 @@ body.mobile-menu-open {
 
 /* MOBILE */
 @media (max-width: 767.98px) {
-    html {
-        overflow-x: clip;
-    }
-
     .hero {
         aspect-ratio: 9 / 16;
     }
@@ -668,12 +664,13 @@ body.mobile-menu-open {
 
 @media (min-width: 768px) {
     .about-container {
-        padding-left: 16px;
-        padding-right: 16px;
+        --about-layout-gutter: min(var(--about-column-gap), 2rem);
+        padding-left: calc(var(--about-layout-gutter) * 0.5);
+        padding-right: calc(var(--about-layout-gutter) * 0.5);
     }
 
     .about-layout {
-        --bs-gutter-x: var(--about-column-gap);
+        --bs-gutter-x: var(--about-layout-gutter);
         align-items: start;
     }
 }
@@ -837,8 +834,13 @@ body.mobile-menu-open {
 /* INFO UTILI - DESKTOP: valori Figma */
 @media (min-width: 768px) {
     .info-container {
-        padding-left: 16px;
-        padding-right: 16px;
+        --info-layout-gutter: min(var(--info-column-gap), 2rem);
+        padding-left: calc(var(--info-layout-gutter) * 0.5);
+        padding-right: calc(var(--info-layout-gutter) * 0.5);
+    }
+
+    .info-layout {
+        --bs-gutter-x: var(--info-layout-gutter);
     }
 
     .info-section {
@@ -901,6 +903,18 @@ body.mobile-menu-open {
     --bs-gutter-x: clamp(1.5rem, 4vw, 4rem);
     row-gap: clamp(1.5rem, 4vw, 3rem);
     align-items: start;
+}
+
+@media (min-width: 768px) {
+    .faq-container {
+        --faq-layout-gutter: min(clamp(1.5rem, 4vw, 4rem), 2rem);
+        padding-left: calc(var(--faq-layout-gutter) * 0.5);
+        padding-right: calc(var(--faq-layout-gutter) * 0.5);
+    }
+
+    .faq-layout {
+        --bs-gutter-x: var(--faq-layout-gutter);
+    }
 }
 
 .faq-heading h2 {

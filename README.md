@@ -84,6 +84,12 @@ Il logo originale non è ancora presente negli asset: il footer usa un wordmark 
 - Bootstrap Icons tramite CDN jsDelivr
 - JavaScript puro, senza librerie aggiuntive
 
+## Layout responsive e overflow
+
+- Nei breakpoint da 768px, i gutter orizzontali delle righe Bootstrap `.about-layout`, `.info-layout` e `.faq-layout` sono sincronizzati con il padding dei rispettivi container: il padding laterale equivale a metà del gutter.
+- Il gutter Desktop è limitato a 2rem, mantenendo gli allineamenti e le colonne esistenti ed evitando che i margini negativi delle righe producano overflow orizzontale.
+- La correzione usa il normale dimensionamento del layout, senza nascondere l'overflow su `html` o `body`. La verifica visiva ai breakpoint resta da fare manualmente.
+
 ## Anteprima locale
 
 Dalla cartella del progetto apri la pagina nel browser predefinito:
