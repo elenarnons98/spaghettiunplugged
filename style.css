@@ -1603,6 +1603,27 @@ body.mobile-menu-open {
     text-align: justify;
 }
 
+/* ===================================
+   DESKTOP - RIDIMENSIONAMENTO ZOOM OUT
+   =================================== */
+@media (min-width: 768px) {
+    /* Limita la larghezza dell'intera pagina */
+    body {
+        width: 100%;
+        max-width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Mantiene la navbar allineata alla pagina */
+    .hero-navbar {
+        left: 50%;
+        width: 100%;
+        max-width: 1920px;
+        transform: translateX(-50%);
+    }
+}
+
 /* PROSSIMI EVENTI - NASCONDI VEDI TUTTI */
 .events-all-link {
     display: none;
