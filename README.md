@@ -40,7 +40,7 @@ Il logo originale non è ancora presente negli asset: il footer usa un wordmark 
 ## Iscrizione Open Mic
 
 - Dopo `#eventi` compare il banner blu “Iscriviti all'Open Mic”, con tipografia NewEdge 666 e icona Bootstrap Icons.
-- Il banner è ancora senza URL: la destinazione verrà aggiunta quando sarà definita. Altezza Desktop attuale: 103px.
+- Il banner apre `https://hatmusic.onelink.me/1oIL/ru3bu1ni` in una nuova scheda. Altezza Desktop attuale: 103px.
 
 ## Chi siamo
 
