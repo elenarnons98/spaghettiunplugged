@@ -31,9 +31,9 @@ Il logo originale non è ancora presente negli asset: il footer usa un wordmark 
 
 ## Prossimi eventi
 
-- La sezione `#eventi` contiene placeholder per Roma e Milano; le locandine originali potranno essere inserite in `img/eventi/`.
-- Ogni locandina e fascia marquee formano un blocco quadrato responsive. Su Mobile le card scorrono orizzontalmente; da 1200px la griglia Desktop dispone le card su due colonne.
-- Le barre “Acquista biglietto” sono predisposte visivamente; i collegamenti saranno aggiunti quando saranno disponibili gli URL.
+- La sezione `#eventi` mostra le locandine definitive: `IMG_8024.JPEG` per Roma e `IMG_8023.JPEG` per Milano, salvate in `img/eventi/`.
+- Le locandine sono mostrate come immagini di sfondo con `background-size: cover`; il contenitore è quadrato su Desktop e Mobile. Su Mobile le card scorrono orizzontalmente; da 1200px la griglia Desktop dispone le card su due colonne.
+- Le barre “Acquista biglietto” collegano alle rispettive pagine DICE in una nuova scheda. Mantengono altezza 52px su Desktop e 38px su Mobile.
 - Le icone freccia usano Bootstrap Icons via CDN.
 
 ## Iscrizione Open Mic

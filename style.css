@@ -404,6 +404,19 @@ body.mobile-menu-open {
     font-size: 17.35px;
     font-weight: 400;
     line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.event-ticket-bar:hover,
+.event-ticket-bar:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.event-ticket-bar:focus-visible {
+    outline: 2px solid #0b2cff;
+    outline-offset: 2px;
 }
 
 .event-ticket-bar .event-ticket-bar__arrow {
@@ -1533,5 +1546,54 @@ body.mobile-menu-open {
         cursor: grabbing;
         scroll-snap-type: none;
         user-select: none;
+    }
+}
+
+/* ===================================
+   PROSSIMI EVENTI - LOCANDINE DEFINITIVE
+   =================================== */
+
+.event-poster-block {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.event-poster {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 1 / 1;
+    flex: none;
+
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* LOCANDINA ROMA */
+.event-poster--roma {
+    background-image: url('img/eventi/IMG_8024.JPEG');
+}
+
+/* LOCANDINA MILANO */
+.event-poster--milano {
+    background-image: url('img/eventi/IMG_8023.JPEG');
+}
+
+/* MOBILE */
+@media (max-width: 767.98px) {
+    .event-poster-block,
+    .event-poster {
+        aspect-ratio: 1 / 1;
+    }
+
+    .event-poster {
+        height: 265px;
+        min-height: 0;
     }
 }
