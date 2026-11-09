@@ -7,14 +7,16 @@ Sito one-page in sviluppo, basato sul progetto Figma **SITO SPAGHETTi 2027**.
 - `index.html` — documento HTML5 e punto d'ingresso; contiene Hero video, navigazione, Prossimi eventi, banner Open Mic, Chi siamo, Info utili, FAQ e footer.
 - `style.css` — stili delle sezioni e dei menu responsive, font personalizzati e animazioni CSS.
 - `font/` — file NewEdge 666 Rounded Regular e Light in formato OTF e TTF.
-- `img/tappo generico.mp4` — video orizzontale utilizzato nella Hero.
+- `img/tappo generico.mp4` — video Hero per Desktop.
+- `img/video home mobile.mp4` — video Hero per Mobile.
 - `img/eventi/`, `img/artisti/`, `img/partner/` — cartelle predisposte per le immagini del sito.
 
 Il logo originale non è ancora presente negli asset: il footer usa un wordmark testuale provvisorio, sostituibile con il file definitivo. Le fasce animate dei partner e degli artisti restano da inserire.
 
 ## Hero e navigazione
 
-- La Hero usa il video `img/tappo generico.mp4` in autoplay, muto e in loop. Su Mobile il video riempie la Hero con `object-fit: cover` e viene ritagliato ai lati.
+- La Hero seleziona `img/video home mobile.mp4` sui viewport fino a 767.98px e `img/tappo generico.mp4` sugli schermi più larghi. Entrambi i video sono configurati in autoplay, muto, in loop e con riproduzione inline.
+- Il video riempie la Hero con `object-fit: cover`; il video orizzontale Desktop viene ritagliato ai lati sui viewport verticali.
 - La navbar Desktop è sovrapposta al video e usa `mix-blend-mode: difference`.
 - Su Mobile un unico pulsante hamburger apre e chiude il pannello bianco a schermo intero. Il pulsante è posizionato in modo assoluto e scorre con la pagina; le due linee si incrociano in una X mentre il pannello scorre da destra.
 - Il menu supporta Escape, navigazione da tastiera, gestione del focus, chiusura alla selezione di un link, blocco dello scroll e `prefers-reduced-motion`.
