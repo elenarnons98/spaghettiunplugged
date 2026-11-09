@@ -34,6 +34,7 @@ Il logo originale non è ancora presente negli asset: il footer usa un wordmark 
 - La sezione `#eventi` mostra le locandine definitive: `IMG_8024.JPEG` per Roma e `IMG_8023.JPEG` per Milano, salvate in `img/eventi/`.
 - Le locandine sono mostrate come immagini di sfondo con `background-size: cover`; il contenitore è quadrato su Desktop e Mobile. Su Mobile le card scorrono orizzontalmente; da 1200px la griglia Desktop dispone le card su due colonne.
 - Le barre “Acquista biglietto” collegano alle rispettive pagine DICE in una nuova scheda. Mantengono altezza 52px su Desktop e 38px su Mobile.
+- Il collegamento “Vedi tutti” è temporaneamente nascosto.
 - Le icone freccia usano Bootstrap Icons via CDN.
 
 ## Iscrizione Open Mic

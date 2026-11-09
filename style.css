@@ -1597,3 +1597,8 @@ body.mobile-menu-open {
         min-height: 0;
     }
 }
+
+/* PROSSIMI EVENTI - NASCONDI VEDI TUTTI */
+.events-all-link {
+    display: none;
+}
