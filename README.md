@@ -4,11 +4,12 @@ Sito one-page in sviluppo, basato sul progetto Figma **SITO SPAGHETTi 2027**.
 
 ## Struttura del progetto
 
-- `index.html` — documento HTML5 e punto d'ingresso; contiene Hero video, navigazione, Prossimi eventi, banner Open Mic, Chi siamo, Info utili, FAQ e footer.
+- `index.html` — documento HTML5 e punto d'ingresso, con titolo pagina “Spaghetti Unplugged”; contiene Hero video, navigazione, Prossimi eventi, banner Open Mic, Chi siamo, Info utili, FAQ e footer.
 - `style.css` — stili delle sezioni e dei menu responsive, font personalizzati e animazioni CSS.
 - `font/` — file NewEdge 666 Rounded Regular e Light in formato OTF e TTF.
 - `img/tappo generico.mp4` — video Hero per Desktop.
 - `img/video home mobile.mp4` — video Hero per Mobile.
+- `img/favicon-spaghetti-unplugged/` — favicon ICO/SVG, icona Apple, icone PNG e manifest installabile.
 - `img/eventi/`, `img/artisti/`, `img/partner/` — cartelle predisposte per le immagini del sito.
 
 Il logo originale non è ancora presente negli asset: il footer usa un wordmark testuale provvisorio, sostituibile con il file definitivo. Le fasce animate dei partner e degli artisti restano da inserire.
@@ -18,6 +19,7 @@ Il logo originale non è ancora presente negli asset: il footer usa un wordmark 
 - La Hero seleziona `img/video home mobile.mp4` sui viewport fino a 767.98px e `img/tappo generico.mp4` sugli schermi più larghi. Entrambi i video sono configurati in autoplay, muto, in loop e con riproduzione inline.
 - Il video riempie la Hero con `object-fit: cover`; il video orizzontale Desktop viene ritagliato ai lati sui viewport verticali.
 - La navbar Desktop e il marchio Mobile sono fissi in alto durante lo scorrimento, sovrapposti alla pagina e usano `mix-blend-mode: difference`.
+- Le favicon sono collegate dall'`<head>` e il manifest usa percorsi relativi alle icone nella propria cartella; il colore del tema è `#BEFF00`.
 - Su Mobile il pulsante hamburger è fisso in alto. Apre e chiude il pannello bianco a schermo intero; le due linee si incrociano in una X mentre il pannello scorre da destra.
 - Il menu supporta Escape, navigazione da tastiera, gestione del focus, chiusura alla selezione di un link, blocco dello scroll e `prefers-reduced-motion`.
 
