@@ -18,7 +18,7 @@ Il logo originale non è ancora presente negli asset: il footer usa un wordmark 
 
 - La Hero seleziona `img/video home mobile.mp4` sui viewport fino a 767.98px e `img/tappo generico.mp4` sugli schermi più larghi. Entrambi i video sono configurati in autoplay, muto, in loop e con riproduzione inline.
 - Il video riempie la Hero con `object-fit: cover`; il video orizzontale Desktop viene ritagliato ai lati sui viewport verticali.
-- La navbar Desktop e il marchio Mobile sono fissi in alto durante lo scorrimento, sovrapposti alla pagina e usano `mix-blend-mode: difference`. Il marchio Mobile è bianco e ha dimensione 26px.
+- La navbar Desktop e il marchio Mobile sono fissi in alto durante lo scorrimento, sovrapposti alla pagina e usano `mix-blend-mode: difference`. Il marchio Mobile è bianco e ha dimensione 20px; anche il titolo nel pannello Mobile aperto è 20px, con interlinea 1.2 e testo su una riga.
 - Su Desktop, la pagina è centrata e limitata a 1920px; la navbar fissa è centrata e allineata alla larghezza della pagina.
 - Le favicon sono collegate dall'`<head>` e il manifest usa percorsi relativi alle icone nella propria cartella; il colore del tema è `#BEFF00`.
 - Su Mobile il pulsante hamburger è fisso in alto. Apre e chiude il pannello bianco a schermo intero; le due linee si incrociano in una X mentre il pannello scorre da destra.

@@ -238,8 +238,16 @@ body.mobile-menu-open {
     }
 
     .hero-navbar .mobile-brand {
-        font-size: 26px;
+        font-size: 20px;
+        line-height: 1.2;
+        white-space: nowrap;
         color: #fff;
+    }
+
+    .mobile-menu-header .mobile-menu-brand {
+        font-size: 20px;
+        line-height: 1.2;
+        white-space: nowrap;
     }
 
     .mobile-menu-toggle {
