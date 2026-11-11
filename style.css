@@ -1657,9 +1657,9 @@ body.mobile-menu-open {
     }
 }
 
-/* CHI SIAMO - TESTI GIUSTIFICATI DESKTOP E MOBILE */
+/* CHI SIAMO - TESTI ALLINEATI A SINISTRA DESKTOP E MOBILE */
 #chi-siamo .about-copy p {
-    text-align: justify;
+    text-align: left;
 }
 
 /* ===================================
