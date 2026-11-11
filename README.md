@@ -21,7 +21,7 @@ Il logo originale non è ancora presente negli asset: il footer usa un wordmark 
 - La navbar Desktop e il marchio Mobile sono fissi in alto durante lo scorrimento, sovrapposti alla pagina e usano `mix-blend-mode: difference`. Il marchio Mobile è bianco e ha dimensione 20px; anche il titolo nel pannello Mobile aperto è 20px, con interlinea 1.2 e testo su una riga.
 - Su Desktop, la pagina è centrata e limitata a 1920px; la navbar fissa è centrata e allineata alla larghezza della pagina.
 - Le favicon sono collegate dall'`<head>` e il manifest usa percorsi relativi alle icone nella propria cartella; il colore del tema è `#BEFF00`.
-- Su Mobile il pulsante hamburger è fisso in alto. Apre e chiude il pannello bianco a schermo intero; le due linee si incrociano in una X mentre il pannello scorre da destra.
+- Su Mobile il pulsante hamburger è fisso in alto a 11px dal bordo superiore. Apre e chiude il pannello bianco a schermo intero; le due linee si incrociano in una X mentre il pannello scorre da destra.
 - Il menu supporta Escape, navigazione da tastiera, gestione del focus, chiusura alla selezione di un link, blocco dello scroll e `prefers-reduced-motion`.
 
 ## Fascia marquee
