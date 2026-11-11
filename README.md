@@ -64,7 +64,7 @@ Il logo originale non è ancora presente negli asset: il footer usa un wordmark 
 
 - Tra `#chi-siamo` e `#info` è presente una fascia nera con tre righe tipografiche orizzontali, composte dai 20 artisti e duplicate per mantenere il ciclo continuo.
 - Le righe scorrono da destra a sinistra con durate di 70, 63 e 67 secondi e offset iniziali differenti. La dimensione del testo si adatta ai breakpoint Desktop, tablet e Mobile.
-- La fascia usa padding verticale di 20px su Desktop e 12px su Mobile; le righe hanno altezza minima `1.4em` e i nomi line-height `1.25` con padding verticale per evitare il taglio degli accenti.
+- La fascia usa il font NewEdge 666 Rounded con peso 200 e dimensione responsive `clamp(72px, 7.5vw, 130px)`. Le righe non impongono un'altezza minima; i nomi usano `line-height: 1.02` senza padding verticale aggiuntivo.
 - L'animazione è realizzata in CSS; con `prefers-reduced-motion` i marquee restano fermi. L'elenco dei nomi resta disponibile agli screen reader.
 
 ## Info utili

@@ -1703,7 +1703,7 @@ body.mobile-menu-open {
     width: 100%;
     font-family: 'NewEdge 666', sans-serif;
     font-size: clamp(72px, 7.5vw, 130px);
-    font-weight: 400;
+    font-weight: 200;
     text-transform: uppercase;
 }
 
@@ -1726,7 +1726,7 @@ body.mobile-menu-open {
     align-items: center;
     gap: 0.55em;
     padding-right: 0.55em;
-    min-height: 1.4em;
+    min-height: 0;
     white-space: nowrap;
 }
 
@@ -1734,8 +1734,7 @@ body.mobile-menu-open {
     display: block;
     flex: 0 0 auto;
     white-space: nowrap;
-    line-height: 1.25;
-    padding-block: 0.1em;
+    line-height: 1.02;
 }
 
 .artists-marquee__row--1 {
