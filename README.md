@@ -58,12 +58,13 @@ Il logo originale non è ancora presente negli asset: il footer usa un wordmark 
 - La sezione `#info` segue «Chi siamo?» e presenta il titolo «Info utili» insieme al «Regolamento Open mic».
 - Usa sfondo blu `#0b2cff`, testo bianco e font NewEdge 666 Rounded.
 - Desktop: titolo 50px, intestazione 40px e paragrafo 30px. Mobile: titolo 50px, intestazione 30px e paragrafo 20px.
-- Il paragrafo del regolamento è giustificato su Desktop e Mobile. Le spaziature sono provvisorie e ancora da confrontare con Figma.
+- Il regolamento è articolato in quattro paragrafi sul funzionamento e sulle finalità dell'Open Mic. I paragrafi sono giustificati su Desktop e Mobile, con una spaziatura di `1em` tra l'uno e l'altro.
 
 ## FAQ
 
 - La sezione `#faq` segue «Info utili» e usa un accordion Bootstrap 5.3.8 accessibile e utilizzabile da tastiera.
-- La prima domanda è aperta inizialmente; la seconda e la terza sono chiuse. Le risposte usano temporaneamente lo stesso testo Lorem ipsum e compaiono solo quando la relativa domanda viene aperta.
+- La prima domanda è aperta inizialmente; la seconda e la terza sono chiuse. Le risposte descrivono iscrizione, premio e modalità di vittoria, e compaiono solo quando viene aperta la relativa domanda.
+- Le risposte possono contenere più paragrafi, separati da uno spazio di `1em`.
 - I simboli `+` e `−` indicano lo stato delle domande. Il testo delle risposte è giustificato su Desktop e Mobile.
 - Il titolo FAQ è 50px e le domande sono 40px su Desktop e Mobile. Le risposte sono 30px su Desktop da 1200px e 20px su Mobile.
 - I titoli principali di Prossimi eventi, Chi siamo, Info utili e FAQ sono impostati a 50px.
