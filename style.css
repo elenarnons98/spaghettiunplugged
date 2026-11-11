@@ -1863,6 +1863,12 @@ body.mobile-menu-open {
         height: clamp(23px, 5.8vw, 40px);
         max-width: 70px;
     }
+
+    .partners-marquee__item:first-child img {
+        height: 32px;
+        max-width: none;
+        width: auto;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
