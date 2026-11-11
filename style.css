@@ -1650,3 +1650,100 @@ body.mobile-menu-open {
 .events-all-link {
     display: none;
 }
+
+/* ===================================
+   ARTISTI - FASCIA ANIMATA
+   =================================== */
+.artists-section {
+    width: 100%;
+    padding: 12px 0 18px;
+    overflow: hidden;
+    background: #000;
+    color: #fff;
+}
+
+.artists-wall {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 8px;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 8px;
+    font-family: 'NewEdge 666', sans-serif;
+    font-size: clamp(29px, 2.55vw, 49px);
+    font-weight: 400;
+    line-height: 1;
+}
+
+.artists-wall__slot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    height: 1.65em;
+    overflow: hidden;
+}
+
+.artists-wall__name {
+    display: block;
+    width: max-content;
+    max-width: none;
+    flex: 0 0 auto;
+    overflow: visible;
+    white-space: nowrap;
+    text-transform: uppercase;
+    line-height: 1.25;
+    padding-block: 0.1em;
+    opacity: 1;
+    transform: translateY(0);
+    transition:
+        transform 420ms cubic-bezier(0.25, 0.7, 0.25, 1),
+        opacity 420ms ease;
+}
+
+.artists-wall__name.is-exiting {
+    opacity: 0;
+    transform: translateY(-110%);
+}
+
+.artists-wall__name.is-entering {
+    opacity: 0;
+    transform: translateY(110%);
+    transition: none;
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .artists-wall {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        font-size: clamp(26px, 2.6vw, 34px);
+    }
+
+    .artists-wall__slot:nth-child(4n) {
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .artists-section {
+        padding: 8px 0 12px;
+    }
+
+    .artists-wall {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 6px;
+        padding: 0 6px;
+        font-size: clamp(17px, 4.7vw, 24px);
+    }
+
+    .artists-wall__slot:nth-child(4n),
+    .artists-wall__slot:nth-child(4n + 3) {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .artists-wall__name {
+        transition: none;
+    }
+}

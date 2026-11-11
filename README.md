@@ -12,7 +12,7 @@ Sito one-page in sviluppo, basato sul progetto Figma **SITO SPAGHETTi 2027**.
 - `img/favicon-spaghetti-unplugged/` — favicon ICO/SVG, icona Apple, icone PNG e manifest installabile.
 - `img/eventi/`, `img/artisti/`, `img/partner/` — cartelle predisposte per le immagini del sito.
 
-Il logo originale non è ancora presente negli asset: il footer usa un wordmark testuale provvisorio, sostituibile con il file definitivo. Le fasce animate dei partner e degli artisti restano da inserire.
+Il logo originale non è ancora presente negli asset: il footer usa un wordmark testuale provvisorio, sostituibile con il file definitivo. La fascia animata dei partner resta da inserire.
 
 ## Hero e navigazione
 
@@ -52,6 +52,13 @@ Il logo originale non è ancora presente negli asset: il footer usa un wordmark 
 - La galleria contiene dieci placeholder grigio chiaro. Su Desktop scorrono in orizzontale, sono larghi 513px e hanno un'altezza minima di 19rem; su Mobile scorrono con swipe e misurano 324 × 324px.
 - La scrollbar è nascosta; su Desktop è possibile trascinare la galleria con il mouse, mentre su Mobile rimane attivo lo scorrimento touch. Non è previsto scorrimento automatico.
 - Testi, proporzioni e spaziature della sezione sono ancora soggetti ad approvazione e verifica con Figma.
+
+## Fascia artisti
+
+- Tra `#chi-siamo` e `#info` è presente una fascia nera con 12 nomi visibili disposti su tre righe: quattro su Desktop, tre su tablet e due su Mobile.
+- I nomi ruotano uno alla volta ogni 1,65 secondi, con ingresso dal basso e uscita verso l'alto. Il ciclo seleziona casualmente i 20 artisti senza duplicati contemporanei.
+- I nomi lunghi si ridimensionano in base alla larghezza dello slot; gli slot alti `1.65em` e il padding interno preservano gli accenti del font.
+- `prefers-reduced-motion` disattiva le transizioni; i nomi restano leggibili agli screen reader tramite un elenco testuale accessibile.
 
 ## Info utili
 
