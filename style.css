@@ -1511,17 +1511,6 @@ body.mobile-menu-open {
     }
 }
 
-/* CHI SIAMO - FOTO DESKTOP */
-@media (min-width: 768px) {
-    .about-gallery-placeholder {
-        min-height: 19rem;
-        aspect-ratio: auto;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-}
-
 /* CHI SIAMO - GALLERIA SCORREVOLE DESKTOP */
 @media (min-width: 768px) {
     .about-gallery {
@@ -1542,10 +1531,11 @@ body.mobile-menu-open {
     .about-gallery-placeholder {
         flex: 0 0 513px;
         width: 513px;
-        min-height: 19rem;
-        aspect-ratio: auto;
+        height: 513px;
+        min-height: 0;
+        aspect-ratio: 1 / 1;
         background-size: cover;
-        background-position: center;
+        background-position: center center;
         background-repeat: no-repeat;
         scroll-snap-align: start;
     }
