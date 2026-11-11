@@ -231,19 +231,73 @@
       Giuse the Lizia, Emma Nolde, Ketama126.
     </p>
 
-    <div class="artists-wall" aria-hidden="true">
-      <div class="artists-wall__slot"><span class="artists-wall__name">Ultimo</span></div>
-      <div class="artists-wall__slot"><span class="artists-wall__name">Gazzelle</span></div>
-      <div class="artists-wall__slot"><span class="artists-wall__name">Måneskin</span></div>
-      <div class="artists-wall__slot"><span class="artists-wall__name">Ditonellapiaga</span></div>
-      <div class="artists-wall__slot"><span class="artists-wall__name">Ariete</span></div>
-      <div class="artists-wall__slot"><span class="artists-wall__name">Tiromancino</span></div>
-      <div class="artists-wall__slot"><span class="artists-wall__name">Giuliano Sangiorgi</span></div>
-      <div class="artists-wall__slot"><span class="artists-wall__name">Paola Turci</span></div>
-      <div class="artists-wall__slot"><span class="artists-wall__name">Erlend Oye</span></div>
-      <div class="artists-wall__slot"><span class="artists-wall__name">Noemi</span></div>
-      <div class="artists-wall__slot"><span class="artists-wall__name">Tommaso Paradiso</span></div>
-      <div class="artists-wall__slot"><span class="artists-wall__name">Margherita Vicario</span></div>
+    <div class="artists-marquee" aria-hidden="true">
+      <div class="artists-marquee__row artists-marquee__row--1">
+        <div class="artists-marquee__track">
+          <div class="artists-marquee__group">
+            <span>Gazzelle</span>
+            <span>Tiromancino</span>
+            <span>Ultimo</span>
+            <span>Giuliano Sangiorgi</span>
+            <span>Vasco Brondi</span>
+            <span>Centomilacarie</span>
+            <span>Faccianuvola</span>
+          </div>
+          <div class="artists-marquee__group">
+            <span>Gazzelle</span>
+            <span>Tiromancino</span>
+            <span>Ultimo</span>
+            <span>Giuliano Sangiorgi</span>
+            <span>Vasco Brondi</span>
+            <span>Centomilacarie</span>
+            <span>Faccianuvola</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="artists-marquee__row artists-marquee__row--2">
+        <div class="artists-marquee__track">
+          <div class="artists-marquee__group">
+            <span>Noemi</span>
+            <span>Måneskin</span>
+            <span>Tommaso Paradiso</span>
+            <span>Joan Thiele</span>
+            <span>Ketama126</span>
+            <span>Emma Nolde</span>
+            <span>Nayt</span>
+          </div>
+          <div class="artists-marquee__group">
+            <span>Noemi</span>
+            <span>Måneskin</span>
+            <span>Tommaso Paradiso</span>
+            <span>Joan Thiele</span>
+            <span>Ketama126</span>
+            <span>Emma Nolde</span>
+            <span>Nayt</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="artists-marquee__row artists-marquee__row--3">
+        <div class="artists-marquee__track">
+          <div class="artists-marquee__group">
+            <span>Paola Turci</span>
+            <span>Ditonellapiaga</span>
+            <span>Ariete</span>
+            <span>Margherita Vicario</span>
+            <span>Erlend Oye</span>
+            <span>Giuse the Lizia</span>
+          </div>
+          <div class="artists-marquee__group">
+            <span>Paola Turci</span>
+            <span>Ditonellapiaga</span>
+            <span>Ariete</span>
+            <span>Margherita Vicario</span>
+            <span>Erlend Oye</span>
+            <span>Giuse the Lizia</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <!-- FINE ARTISTI -->
@@ -535,178 +589,6 @@
       gallery.addEventListener('pointerup', stopDragging);
       gallery.addEventListener('pointercancel', stopDragging);
       gallery.addEventListener('lostpointercapture', stopDragging);
-    })();
-  </script>
-  <script>
-    (() => {
-      const artists = [
-        'Ultimo',
-        'Gazzelle',
-        'Måneskin',
-        'Ditonellapiaga',
-        'Ariete',
-        'Tiromancino',
-        'Giuliano Sangiorgi',
-        'Paola Turci',
-        'Erlend Oye',
-        'Noemi',
-        'Tommaso Paradiso',
-        'Margherita Vicario',
-        'Vasco Brondi',
-        'Nayt',
-        'Joan Thiele',
-        'Centomilacarie',
-        'Faccianuvola',
-        'Giuse the Lizia',
-        'Emma Nolde',
-        'Ketama126'
-      ];
-
-      const wall = document.querySelector('.artists-wall');
-      if (!wall) return;
-
-      const slots = Array.from(wall.querySelectorAll('.artists-wall__name'));
-      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-      const transitionDuration = 420;
-      const changeInterval = 1650;
-
-      let remainingNames = [];
-      let slotQueue = [];
-
-      function shuffle(items) {
-        const result = [...items];
-
-        for (let i = result.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          [result[i], result[j]] = [result[j], result[i]];
-        }
-
-        return result;
-      }
-
-      function fitName(element) {
-        const slot = element.parentElement;
-
-        if (window.getComputedStyle(slot).display === 'none') return;
-
-        element.style.fontSize = '';
-
-        const baseSize = parseFloat(window.getComputedStyle(wall).fontSize);
-        const availableWidth = slot.clientWidth - 10;
-        const requiredWidth = element.scrollWidth;
-
-        if (requiredWidth > availableWidth && availableWidth > 0) {
-          const newSize = baseSize * availableWidth / requiredWidth;
-          element.style.fontSize = `${newSize.toFixed(2)}px`;
-        }
-      }
-
-      function setName(element, name) {
-        element.textContent = name;
-        element.classList.remove('is-long');
-        fitName(element);
-      }
-
-      function getVisibleSlots() {
-        return slots.filter(element =>
-          window.getComputedStyle(element.parentElement).display !== 'none'
-        );
-      }
-
-      function refillNames() {
-        const visibleNames = new Set(
-          getVisibleSlots().map(element => element.textContent.trim())
-        );
-
-        remainingNames = shuffle(
-          artists.filter(name => !visibleNames.has(name))
-        );
-      }
-
-      function getNextName() {
-        if (remainingNames.length === 0) refillNames();
-
-        const visibleNames = new Set(
-          getVisibleSlots().map(element => element.textContent.trim())
-        );
-
-        let index = remainingNames.findIndex(name => !visibleNames.has(name));
-
-        if (index === -1) {
-          refillNames();
-          index = 0;
-        }
-
-        return remainingNames.splice(index, 1)[0];
-      }
-
-      function changeArtist() {
-        if (reducedMotion.matches || document.hidden) return;
-
-        const visibleSlots = getVisibleSlots();
-        if (visibleSlots.length === 0) return;
-
-        slotQueue = slotQueue.filter(element => visibleSlots.includes(element));
-
-        if (slotQueue.length === 0) slotQueue = shuffle(visibleSlots);
-
-        const element = slotQueue.pop();
-        const nextName = getNextName();
-
-        element.classList.add('is-exiting');
-
-        window.setTimeout(() => {
-          setName(element, nextName);
-          element.classList.remove('is-exiting');
-          element.classList.add('is-entering');
-
-          window.requestAnimationFrame(() => {
-            window.requestAnimationFrame(() => {
-              element.classList.remove('is-entering');
-            });
-          });
-        }, transitionDuration);
-      }
-
-      function resetAfterResize() {
-        const usedNames = new Set();
-
-        getVisibleSlots().forEach(element => {
-          let name = element.textContent.trim();
-
-          if (usedNames.has(name)) {
-            name = artists.find(artist => !usedNames.has(artist));
-            setName(element, name);
-          }
-
-          usedNames.add(name);
-        });
-
-        remainingNames = [];
-        slotQueue = [];
-        getVisibleSlots().forEach(fitName);
-      }
-
-      slots.forEach(element => setName(element, element.textContent.trim()));
-      refillNames();
-      window.setInterval(changeArtist, changeInterval);
-
-      [
-        '(max-width: 767.98px)',
-        '(max-width: 1199.98px)'
-      ].forEach(query => {
-        window.matchMedia(query).addEventListener('change', resetAfterResize);
-      });
-
-      window.addEventListener('resize', () => {
-        window.requestAnimationFrame(() => {
-          getVisibleSlots().forEach(fitName);
-        });
-      });
-
-      document.fonts.ready.then(() => {
-        getVisibleSlots().forEach(fitName);
-      });
     })();
   </script>
 </body>

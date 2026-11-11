@@ -62,10 +62,10 @@ Il logo originale non è ancora presente negli asset: il footer usa un wordmark 
 
 ## Fascia artisti
 
-- Tra `#chi-siamo` e `#info` è presente una fascia nera con 12 nomi visibili disposti su tre righe: quattro su Desktop, tre su tablet e due su Mobile.
-- I nomi ruotano uno alla volta ogni 1,65 secondi, con ingresso dal basso e uscita verso l'alto. Il ciclo seleziona casualmente i 20 artisti senza duplicati contemporanei.
-- I nomi lunghi si ridimensionano in base alla larghezza dello slot; gli slot alti `1.65em` e il padding interno preservano gli accenti del font.
-- `prefers-reduced-motion` disattiva le transizioni; i nomi restano leggibili agli screen reader tramite un elenco testuale accessibile.
+- Tra `#chi-siamo` e `#info` è presente una fascia nera con tre righe tipografiche orizzontali, composte dai 20 artisti e duplicate per mantenere il ciclo continuo.
+- Le righe scorrono da destra a sinistra con durate di 70, 63 e 67 secondi e offset iniziali differenti. La dimensione del testo si adatta ai breakpoint Desktop, tablet e Mobile.
+- La fascia usa padding verticale di 20px su Desktop e 12px su Mobile; le righe hanno altezza minima `1.4em` e i nomi line-height `1.25` con padding verticale per evitare il taglio degli accenti.
+- L'animazione è realizzata in CSS; con `prefers-reduced-motion` i marquee restano fermi. L'elenco dei nomi resta disponibile agli screen reader.
 
 ## Info utili
 
