@@ -74,7 +74,7 @@ Il logo originale non è ancora presente negli asset: il footer usa un wordmark 
 - Il footer segue la FAQ, usa sfondo nero, testi bianchi e font NewEdge 666 Rounded.
 - Su Desktop sono presenti wordmark e slogan a sinistra, Contatti nella terza colonna e Seguici a destra, con spazio libero tra le aree. Il wordmark è 40.5px; slogan, contatti, social e copyright usano le misure Figma fornite.
 - Su Mobile il contenuto è disposto in due colonne: wordmark e slogan a sinistra, Contatti e Seguici a destra. Wordmark 30px, slogan 11.23px e testi delle colonne 11px; copyright 8px.
-- L'email apre `mailto:info@spaghettiunplugged.com`. Instagram resta testo in attesa del relativo URL; Facebook è stato rimosso. Non è presente la sezione Legal.
+- L'email apre `mailto:info@spaghettiunplugged.com`. Instagram collega al profilo ufficiale in una nuova scheda; Facebook è stato rimosso. Non è presente la sezione Legal.
 - Il footer usa un wordmark provvisorio perché il logo originale non è presente negli asset locali.
 
 ## Tecnologie
