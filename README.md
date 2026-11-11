@@ -4,7 +4,7 @@ Sito one-page in sviluppo, basato sul progetto Figma **SITO SPAGHETTi 2027**.
 
 ## Struttura del progetto
 
-- `index.html` — documento HTML5 e punto d'ingresso, con titolo pagina “Spaghetti Unplugged”; contiene Hero video, navigazione, Prossimi eventi, banner Open Mic, Chi siamo, Info utili, FAQ e footer.
+- `index.html` — documento HTML5 e punto d'ingresso, con titolo pagina “Spaghetti Unplugged”; contiene Hero video, navigazione, Prossimi eventi, banner Open Mic, fascia Partner, Chi siamo, fascia Artisti, Info utili, FAQ e footer.
 - `style.css` — stili delle sezioni e dei menu responsive, font personalizzati e animazioni CSS.
 - `font/` — file NewEdge 666 Rounded Regular e Light in formato OTF e TTF.
 - `img/tappo generico.mp4` — video Hero per Desktop.
@@ -12,7 +12,7 @@ Sito one-page in sviluppo, basato sul progetto Figma **SITO SPAGHETTi 2027**.
 - `img/favicon-spaghetti-unplugged/` — favicon ICO/SVG, icona Apple, icone PNG e manifest installabile.
 - `img/eventi/`, `img/artisti/`, `img/partner/` — cartelle predisposte per le immagini del sito.
 
-Il logo originale non è ancora presente negli asset: il footer usa un wordmark testuale provvisorio, sostituibile con il file definitivo. La fascia animata dei partner resta da inserire.
+Il logo originale non è ancora presente negli asset: il footer usa un wordmark testuale provvisorio, sostituibile con il file definitivo.
 
 ## Hero e navigazione
 
@@ -42,6 +42,12 @@ Il logo originale non è ancora presente negli asset: il footer usa un wordmark 
 
 - Dopo `#eventi` compare il banner blu “Iscriviti all'Open Mic”, con tipografia NewEdge 666 e icona Bootstrap Icons.
 - Il banner apre `https://hatmusic.onelink.me/1oIL/ru3bu1ni` in una nuova scheda. Altezza Desktop attuale: 103px.
+
+## Fascia Partner
+
+- Dopo il banner Open Mic e prima di `#chi-siamo` scorre una fascia nera con bordo superiore blu.
+- Le coppie “Powered by” con il logo KoRo e “Main Partner” con il logo HAT Music mantengono testo e logo associati; i due SVG originali si trovano in `img/partner/`.
+- Il marquee scorre da destra a sinistra con ciclo di 65 secondi. Su Mobile usa spazi e dimensioni ridotti; con `prefers-reduced-motion` l'animazione si ferma.
 
 ## Chi siamo
 
