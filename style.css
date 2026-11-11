@@ -1799,7 +1799,7 @@ body.mobile-menu-open {
    PARTNER - MARQUEE LENTO
    =================================== */
 .partners-marquee {
-    --partners-speed: 65s;
+    --partners-speed: 45s;
 
     width: 100%;
     padding: 24px 0;

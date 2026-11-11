@@ -47,7 +47,7 @@ Il logo originale non è ancora presente negli asset: il footer usa un wordmark 
 
 - Dopo il banner Open Mic e prima di `#chi-siamo` scorre una fascia nera con bordo superiore blu.
 - Le coppie “Powered by” con il logo KoRo e “Main Partner” con il logo HAT Music mantengono testo e logo associati; i due SVG originali si trovano in `img/partner/`.
-- Il marquee scorre da destra a sinistra con ciclo di 65 secondi. Su Mobile usa spazi e dimensioni ridotti; con `prefers-reduced-motion` l'animazione si ferma.
+- Il marquee scorre da destra a sinistra con ciclo di 45 secondi. Su Mobile usa spazi e dimensioni ridotti; con `prefers-reduced-motion` l'animazione si ferma.
 
 ## Chi siamo
 
