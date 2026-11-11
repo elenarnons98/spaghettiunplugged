@@ -660,6 +660,9 @@ body.mobile-menu-open {
     min-width: 0;
     aspect-ratio: 1 / 1;
     background-color: #e5e5e5;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 @media (min-width: 768px) {
@@ -1546,6 +1549,50 @@ body.mobile-menu-open {
         background-repeat: no-repeat;
         scroll-snap-align: start;
     }
+}
+
+/* CHI SIAMO - FOTO GALLERIA */
+.about-gallery-photo--8083 {
+    background-image: url('img/artisti/IMG_8083.JPEG');
+    background-position: center 25%;
+}
+
+.about-gallery-photo--8084 {
+    background-image: url('img/artisti/IMG_8084.JPEG');
+    background-position: center 35%;
+}
+
+.about-gallery-photo--8085 {
+    background-image: url('img/artisti/IMG_8085.JPEG');
+}
+
+.about-gallery-photo--8086 {
+    background-image: url('img/artisti/IMG_8086.JPEG');
+    background-position: center 0%;
+}
+
+.about-gallery-photo--8087 {
+    background-image: url('img/artisti/IMG_8087.JPEG');
+}
+
+.about-gallery-photo--8088 {
+    background-image: url('img/artisti/IMG_8088.JPEG');
+}
+
+.about-gallery-photo--8090 {
+    background-image: url('img/artisti/IMG_8090.JPEG');
+}
+
+.about-gallery-photo--8091 {
+    background-image: url('img/artisti/IMG_8091.JPEG');
+}
+
+.about-gallery-photo--8092 {
+    background-image: url('img/artisti/IMG_8092.JPEG');
+}
+
+.about-gallery-photo--8093 {
+    background-image: url('img/artisti/IMG_8093.JPEG');
 }
 
 /* CHI SIAMO - GALLERIA SWIPE SENZA SCROLLBAR */

@@ -55,7 +55,8 @@ Il logo originale non è ancora presente negli asset: il footer usa un wordmark 
 - Da Desktop il layout usa due colonne uguali (50% titolo, 50% testi); su Mobile titolo e testi restano impilati.
 - Il titolo è 50px e il primo paragrafo 30px su Desktop e Mobile; il secondo paragrafo è 25px su Desktop e 16.81px su Mobile.
 - Entrambi i paragrafi sono giustificati.
-- La galleria contiene dieci placeholder grigio chiaro. Su Desktop scorrono in orizzontale, sono larghi 513px e hanno un'altezza minima di 19rem; su Mobile scorrono con swipe e misurano 324 × 324px.
+- La galleria contiene dieci foto da `img/artisti/` con descrizioni accessibili e immagini di sfondo centrate con `cover`. Su Desktop scorrono in orizzontale, sono larghe 513px e hanno un'altezza minima di 19rem; su Mobile scorrono con swipe e misurano 324 × 324px.
+- Gli inquadramenti personalizzati sono: IMG_8084 al 35%, IMG_8086 allo 0% e IMG_8083 al 25% sull'asse verticale.
 - La scrollbar è nascosta; su Desktop è possibile trascinare la galleria con il mouse, mentre su Mobile rimane attivo lo scorrimento touch. Non è previsto scorrimento automatico.
 - Testi, proporzioni e spaziature della sezione sono ancora soggetti ad approvazione e verifica con Figma.
 
